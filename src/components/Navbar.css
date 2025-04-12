@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.navbar h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #007bff;
+  gap: 0.5rem;
+}
+
+.navbar div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar a,
+.navbar button {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 👇 SMALL SCREEN */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar h2 {
+    font-size: 1.2rem;
+  }
+
+  .navbar a,
+  .navbar button {
+    font-size: 0.85rem;
+  }
+
+  .navbar svg {
+    font-size: 0.9rem;
+  }
+}
+
+/* 👇 MEDIUM SCREEN */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar a,
+  .navbar button {
+    font-size: 0.95rem;
+  }
+
+  .navbar svg {
+    font-size: 1rem;
+  }
+}
+
+/* 👇 LARGE SCREEN */
+@media (min-width: 769px) {
+  .navbar h2 {
+    font-size: 1.8rem;
+  }
+
+  .navbar a,
+  .navbar button {
+    font-size: 1rem;
+  }
+
+  .navbar svg {
+    font-size: 1.2rem;
+  }
+}
